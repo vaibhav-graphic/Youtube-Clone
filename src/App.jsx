@@ -1,11 +1,15 @@
 import './App.css'
+import Header from './components/Header'
+import Body from "./components/Body"
+
 
 function App() {
 
   return (
-    <>
-      <div className='p-4 bg-black text-amber-50'>Hellow</div>
-    </>
+    <div>
+      <Header/>
+      <Body/>
+    </div>
   )
 }
 
