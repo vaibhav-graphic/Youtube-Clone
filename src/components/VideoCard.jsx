@@ -3,7 +3,6 @@ const VideoCard = ({info}) => {
         return;
     }
 
-    console.log(info)
     const {snippet, statistics} = info;
     const {channelTitle, title, thumbnails} = snippet;
 
@@ -14,7 +13,7 @@ const VideoCard = ({info}) => {
         <ul>
             <li className="font-bold">{title}</li>
             <li>{channelTitle}</li>
-            <li>{statistics?.viewCount}</li>
+            <li>{statistics?.viewCount} views</li>
         </ul>
     </div>
 }
