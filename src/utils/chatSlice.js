@@ -9,7 +9,7 @@ const chatSlice = createSlice({
     reducers: {
         addMessage: (state, action) => {
             state.message.splice(OFFSET_LIVE_CHAT, 1);
-            state.message.unshift(action.payload);
+            state.message.push(action.payload);
         } 
     }
 });
